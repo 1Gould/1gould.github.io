@@ -9,7 +9,7 @@ description: >-
   A personal cybersecurity blog covering career growth, security projects,
   certifications, lab work, defensive operations, and practical research notes.
 url: "https://1gould.github.io"
-baseurl: "/blog"
+baseurl: ""
 
 github:
   username: 1gould

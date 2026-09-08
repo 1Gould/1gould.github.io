@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Daniel Gould
+permalink: /
 ---
 
 ![Cybersecurity workspace]({{ '/assets/img/security-workspace.png' | relative_url }}){: width="1200" height="675" }
