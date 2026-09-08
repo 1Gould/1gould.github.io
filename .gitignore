@@ -3,6 +3,7 @@
 .config
 vendor
 Gemfile.lock
+README.md
 
 .jekyll-cache
 .jekyll-metadata
