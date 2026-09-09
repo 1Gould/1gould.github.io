@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Daniel Gould"
+title: "1Gould"
 author_profile: true
 redirect_from:
   - /about/
