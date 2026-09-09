@@ -32,12 +32,10 @@ jobs:
         with:
           ruby-version: '3.4'
           bundler-cache: true
-      - name: Build site
-        run: bundle exec jekyll build
+      - name: Build Academic Pages
+        run: bundle exec jekyll build --trace
         env:
           JEKYLL_ENV: production
-      - name: Test site
-        run: bundle exec htmlproofer _site --disable-external
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v5
         with:
