@@ -23,7 +23,7 @@ repository               : "1Gould/1gould.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           :
+  avatar           : images/lean.jpg
   name             : "1Gould"
   pronouns         : # example: "she/her"
   bio              : "Security career notes and technical writeups"
@@ -73,7 +73,7 @@ author:
   soundcloud       : # Username
   steam            : # Username
   telegram         : # URL
-  tumblr           : # Username
+  tumblr           : https://x.com/rp1zyl
   twitter          : # Username for X / Twitter
   vine             : # Username
   weibo            : # Username
