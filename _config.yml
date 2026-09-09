@@ -23,7 +23,7 @@ repository               : "1Gould/1gould.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : images/lean.jpg
+  avatar           : lean.jpg
   name             : "1Gould"
   pronouns         : # example: "she/her"
   bio              : "Security career notes and technical writeups"
