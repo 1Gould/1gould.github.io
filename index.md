@@ -5,7 +5,9 @@ layout: home
 
 ## About {#about-me}
 
-I love learning about security and systems. My specialties are Windows internals and penetration testing. I use this site to share what I learn.
+I’m interested in breaking and securing systems. My focus is on penetration testing, Windows internals, and malware development. I’m also interested in practical applications of AI in security: where it’s useful, where it falls short, and how it can support the work rather than replace understanding.
+
+My background spans infrastructure, software tooling, and data solutions. I use this site to document what I’m learning, break down technical concepts, and share practical notes from security research and hands-on experimentation.
 
 ## Work experience
 
