@@ -24,21 +24,22 @@ I love learning about security and systems. My specialties are Windows internals
 
 ## Certifications
 
-### OSAI
+- ### OSAI
 
-Offensive Security AI Red Teamer
+  Offensive Security AI Red Teamer
 
-### OSCP
+- ### OSCP
 
-Offensive Security Certified Penetration Tester
+  Offensive Security Certified Penetration Tester
 
-### Security+
+- ### Security+
 
-CompTIA
+  CompTIA
 
-### eJPT
+- ### eJPT
 
-eLearnSecurity Junior Penetration Tester
+  eLearnSecurity Junior Penetration Tester
+{: .certification-grid role="list" aria-labelledby="certifications"}
 
 ## Recent Training & Courses {#trainings}
 
