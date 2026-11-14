@@ -9,11 +9,18 @@ I love learning about security and systems. My specialties are Windows internals
 
 ## Work experience
 
-### Data Solutions Consultant · CIBC
+- ### Data Solutions Consultant
 
-### Infrastructure Analyst · VDI Networks
+  CIBC
 
-### Core Tools Developer · RBC
+- ### Infrastructure Analyst
+
+  VDI Networks
+
+- ### Core Tools Developer
+
+  RBC
+{: .experience-timeline role="list" aria-labelledby="work-experience"}
 
 ## Certifications
 
