@@ -2,34 +2,55 @@
 title: Home
 layout: home
 ---
-## About me
 
-I'm **1gould**. This is my space for technical notes, projects, and things learned along the way.
+## About {#about-me}
 
-Find my code on [GitHub](https://github.com/1gould).
+I love learning about security and systems. My specialties are Windows internals and penetration testing. I use this site to share what I learn.
 
 ## Work experience
 
-No work experience listed yet.
+### Data Solutions Consultant · CIBC
 
-<!-- Replace the line above with Markdown entries, for example:
-### Role · Organisation
-2024 — Present
+### Infrastructure Analyst · VDI Networks
 
-A short description of your work and its impact.
--->
+### Core Tools Developer · RBC
 
 ## Certifications
 
-No certifications listed yet.
+### OSAI
 
-<!-- Add certification names, issuing organisations, dates, and credential links here. -->
+Offensive Security AI Red Teamer
 
-## Trainings
+### OSCP
 
-No trainings listed yet.
+Offensive Security Certified Penetration Tester
 
-<!-- Add course names, providers, dates, and a brief description here. -->
+### Security+
+
+CompTIA
+
+### eJPT
+
+eLearnSecurity Junior Penetration Tester
+
+## Recent Training & Courses {#trainings}
+
+| Course | Provider | Year |
+| --- | --- | --- |
+| Hackbots | Arcanum Security | 2026 |
+| Malware Development | MalDev Academy | 2026 |
+| Windows Evasion | Sektor7 | 2025 |
+| Malware Development Advanced Vol. 1 | Sektor7 | 2025 |
+| Malware Development Intermediate | Sektor7 | 2025 |
+| Attacking & Defending Azure & M365 | XINTRA | 2024 |
+| Initial Access & Persistence | Zero-Point Security | 2024 |
+{: .training-table aria-labelledby="trainings"}
+
+## Education
+
+### Honours Bachelor of Applied Information Science (Information Systems Security)
+
+Sheridan College
 
 ## Blog posts
 

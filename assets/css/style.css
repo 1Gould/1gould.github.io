@@ -109,6 +109,50 @@ h1 { margin: 0; font-size: clamp(2.1rem, 6vw, 3rem); font-weight: 600; letter-sp
 .prose table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 .prose th, .prose td { padding: .7rem 1rem; border-bottom: 1px solid var(--line); text-align: left; }
 .prose th { font-weight: 600; }
+/* Opt in from a Markdown table with {: .training-table }.
+   Keep native table semantics and allow long names to wrap on mobile. */
+.prose .training-table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--accent) 2%, var(--paper));
+  font-size: .875rem;
+  line-height: 1.65;
+}
+.training-table th, .training-table td {
+  padding: 1rem 1.1rem;
+  vertical-align: top;
+  border-bottom-color: color-mix(in srgb, var(--line) 65%, var(--paper));
+}
+.training-table th {
+  background: var(--code);
+  color: var(--accent);
+  font-size: .7rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.training-table th:first-child { width: 57%; border-top-left-radius: 7px; }
+.training-table th:nth-child(2) { width: 30%; }
+.training-table th:last-child { width: 13%; border-top-right-radius: 7px; }
+.training-table td:first-child { font-weight: 600; }
+.training-table td:nth-child(2) { color: var(--muted); }
+.training-table th:last-child, .training-table td:last-child {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.training-table td:last-child { color: var(--accent); }
+.training-table tr:last-child td { border-bottom: 0; }
+.training-table tr:last-child td:first-child { border-bottom-left-radius: 7px; }
+.training-table tr:last-child td:last-child { border-bottom-right-radius: 7px; }
+@media (hover: hover) {
+  .training-table tbody tr:hover { background: color-mix(in srgb, var(--accent) 6%, var(--paper)); }
+}
 .prose hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
 .prose .post-list { list-style: none; padding: 0; margin: 0; }
 .post-list li { display: grid; grid-template-columns: 100px 1fr; gap: 1.5rem; padding: .7rem 0 1rem; }
@@ -144,4 +188,10 @@ h1 { margin: 0; font-size: clamp(2.1rem, 6vw, 3rem); font-weight: 600; letter-sp
   .post-list li { grid-template-columns: 1fr; gap: .25rem; }
   .site-footer { flex-direction: column; margin-top: 3rem; }
   .prose pre { padding: 1rem; }
+  .prose .training-table { font-size: .8rem; }
+  .training-table th, .training-table td { padding: .85rem .55rem; }
+  .training-table th { font-size: .65rem; letter-spacing: .04em; }
+  .training-table th:first-child { width: 53%; }
+  .training-table th:nth-child(2) { width: 30%; }
+  .training-table th:last-child { width: 17%; }
 }
