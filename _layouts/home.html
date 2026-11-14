@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="profile-heading">
+  <p class="eyebrow">Profile &amp; technical notes</p>
+  <h1>{{ site.title | escape }}<span class="title-dot" aria-hidden="true">.</span></h1>
+  <nav class="section-nav" aria-label="On this page">
+    <a href="#about-me">About</a>
+    <a href="#work-experience">Experience</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#trainings">Trainings</a>
+    <a href="#blog-posts">Posts</a>
+  </nav>
+</div>
+<div class="profile-content prose">
+  {{ content }}
+</div>
