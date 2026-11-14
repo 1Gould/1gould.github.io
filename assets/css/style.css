@@ -33,15 +33,15 @@
   font-display: swap;
 }
 
-/* Midnight Blue is the fixed site palette, independent of OS appearance. */
+/* Tokyo Night is the fixed site palette, independent of OS appearance. */
 :root {
   color-scheme: dark;
-  --paper: #15161e;
-  --ink: #b8c9ea;
-  --muted: #9b9fb6;
-  --line: #343747;
-  --accent: #78c7ff;
-  --code: #1e202c;
+  --paper: #1a1b26;
+  --ink: #c0caf5;
+  --muted: #a9b1d6;
+  --line: #3b4261;
+  --accent: #7aa2f7;
+  --code: #24283b;
   --mono: "Ioskeley Mono", ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
 
@@ -133,8 +133,8 @@ h1 { margin: 0; font-size: clamp(2.1rem, 6vw, 3rem); font-weight: 600; letter-sp
 .skip-link:focus { top: 1rem; }
 .highlight .c, .highlight .c1, .highlight .cm { color: var(--muted); font-style: italic; }
 .highlight .k, .highlight .kn, .highlight .kd, .highlight .nt { color: var(--accent); font-weight: 600; }
-.highlight .s, .highlight .s1, .highlight .s2 { color: #e9b872; }
-.highlight .m, .highlight .mi, .highlight .mf { color: #b7a1f1; }
+.highlight .s, .highlight .s1, .highlight .s2 { color: #9ece6a; }
+.highlight .m, .highlight .mi, .highlight .mf { color: #ff9e64; }
 
 @media (max-width: 520px) {
   .site-shell { width: calc(100% - 2.5rem); }
