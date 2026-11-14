@@ -155,7 +155,7 @@ h1 { margin: 0; font-size: clamp(2.1rem, 6vw, 3rem); font-weight: 600; letter-sp
 .certification-grid h3 {
   margin: 0;
   color: var(--accent);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.3;
   letter-spacing: -.02em;
