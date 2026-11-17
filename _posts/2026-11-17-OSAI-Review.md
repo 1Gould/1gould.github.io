@@ -161,7 +161,9 @@ Here are some additional resources for experimenting:
 
 ## Conclusion
 
-Overall I learned a lot from the material and challenge labs for exploiting AI/ML environments. Highly recommend taking the course if you are interested in improving your knowledge of offensive security in these areas. Developing your own agent is valuable and will continue to be something we see become more prominent in the future for both red and blue teams.
+![Daniel Ian Gould's OSAI certificate, awarded by OffSec on November 8, 2026.]({{ '/assets/images/osai-review/osai-certificate.png' | relative_url }})
+
+Overall I learned a lot from the material and challenge labs for exploiting AI/ML environments. Highly recommend taking the course if you are interested in improving your knowledge of offensive security in these areas. Developing your own agent is valuable and will continue to be something we see become more prominent in the future for both red and blue teams. The most valuable part is turning your *repeatable* methodology into agent skills that can be benchmarked, tested and improved.
 
 ## Further Research
 
