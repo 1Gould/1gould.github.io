@@ -174,6 +174,12 @@ h1 { margin: 0; font-size: clamp(2.1rem, 6vw, 3rem); font-weight: 600; letter-sp
 .prose table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 .prose th, .prose td { padding: .7rem 1rem; border-bottom: 1px solid var(--line); text-align: left; }
 .prose th { font-weight: 600; }
+/* Wide Markdown comparisons opt in with {: .comparison-table }.
+   Preserve readable words and scroll the table rather than the page. */
+.comparison-table th, .comparison-table td { min-width: 9rem; overflow-wrap: normal; vertical-align: top; }
+.comparison-table th:first-child, .comparison-table td:first-child { min-width: 3rem; }
+.comparison-table th:nth-child(3), .comparison-table td:nth-child(3) { min-width: 14rem; }
+.comparison-table th:last-child, .comparison-table td:last-child { min-width: 12rem; }
 /* Opt in from a Markdown table with {: .training-table }.
    Keep native table semantics and allow long names to wrap on mobile. */
 .prose .training-table {
