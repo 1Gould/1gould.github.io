@@ -161,7 +161,10 @@ Follow [AGENTS.md](AGENTS.md), and [osai-engagement](.codex/skills/osai-engageme
 
 ## MANDATORY CONTRACT - read before doing anything else
 
-If this skill was invoked, you MUST read the ENTIRE SKILL.md before you perform the skill or touch a target. A 150-line skim is enough only to decide whether the skill applies. Read only the reference files selected by the current evidence and routing rules, and read each selected reference in full. Do not load unselected references.
+If this skill was invoked, you MUST read the ENTIRE SKILL.md before you perform the skill or touch a target. 
+A 150-line skim is enough only to decide whether the skill applies. 
+Read only the reference files selected by the current evidence and routing rules, and read each selected reference in full. 
+Do not load unselected references.
 
 ## Mandatory steps
 
