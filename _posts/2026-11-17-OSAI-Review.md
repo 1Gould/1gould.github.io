@@ -4,14 +4,36 @@ description: "My experience with AI-300, the OSAI exam, and building an AI pente
 date: 2026-11-17 00:00:00 +0000
 ---
 
-<nav class="section-nav" aria-label="Table of contents">
-  <a href="#course">Course</a>
-  <a href="#labs">Labs</a>
-  <a href="#exam">Exam</a>
-  <a href="#agent-setup">Agent Setup</a>
-  <a href="#building-the-agent">Building the Agent</a>
-  <a href="#conclusion">Conclusion</a>
-  <a href="#further-research">Further Research</a>
+<nav class="post-toc" aria-labelledby="contents-label">
+  <p class="toc-title" id="contents-label">Contents</p>
+  <ul role="list">
+    <li><a href="#course">Course</a></li>
+    <li><a href="#labs">Labs</a></li>
+    <li><a href="#exam">Exam</a></li>
+    <li>
+      <a href="#agent-setup">Agent Setup</a>
+      <ul role="list">
+        <li><a href="#models">Models</a></li>
+        <li><a href="#refusals">Refusals</a></li>
+        <li><a href="#harness">Harness</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#building-the-agent">Building the Agent</a>
+      <ul role="list">
+        <li><a href="#the-core-loop">The Core Loop</a></li>
+        <li><a href="#feedback-loop">Feedback Loop</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li>
+      <a href="#further-research">Further Research</a>
+      <ul role="list">
+        <li><a href="#harness-engineering">Harness Engineering</a></li>
+        <li><a href="#books">Books</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
 
 ## Course

@@ -237,9 +237,16 @@ h1 { margin: 0; font-size: clamp(1.875rem, 5vw, 2.5rem); font-weight: 600; lette
 .post { padding-top: 2rem; }
 .back-link { font: 12px/1.7 var(--mono); text-decoration: none; }
 .post-heading { margin: 2.75rem 0 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--line); }
+.post-heading h1 { font-size: clamp(1.75rem, 4.5vw, 2.25rem); }
 .post-description { color: var(--muted); margin: 1.25rem 0 0; font-size: 1.05rem; }
-.post-content .section-nav { font-size: .9375rem; font-weight: 600; }
-.post-content .section-nav a { color: var(--accent); }
+.post-toc { margin: 1.75rem 0 2.5rem; font-size: .9375rem; line-height: 1.8; }
+.post-toc .toc-title { margin: 0 0 .75rem; font-size: 1.125rem; font-weight: 600; }
+.post-toc ul { list-style: none; margin: 0; padding: 0; }
+.post-toc ul ul { margin: .25rem 0 .5rem .4rem; padding-left: 1.1rem; border-left: 1px solid var(--line); }
+.post-toc li + li { margin-top: .125rem; }
+.post-toc a { display: inline-block; color: var(--accent); font-weight: 600; text-decoration: none; }
+.post-toc ul ul a { font-weight: 400; }
+.post-toc a:hover { text-decoration: underline; }
 .post-content h2 { margin: 2.5rem 0 1rem; font-size: 1.625rem; font-weight: 600; letter-spacing: -.02em; }
 .post-content h3 { font-size: 1.1875rem; }
 .post-content h4 { font-size: 1rem; line-height: 1.4; font-weight: 600; }
