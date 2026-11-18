@@ -4,6 +4,16 @@ description: "My experience with AI-300, the OSAI exam, and building an AI pente
 date: 2026-11-17 00:00:00 +0000
 ---
 
+<nav class="section-nav" aria-label="Table of contents">
+  <a href="#course">Course</a>
+  <a href="#labs">Labs</a>
+  <a href="#exam">Exam</a>
+  <a href="#agent-setup">Agent Setup</a>
+  <a href="#building-the-agent">Building the Agent</a>
+  <a href="#conclusion">Conclusion</a>
+  <a href="#further-research">Further Research</a>
+</nav>
+
 ## Course
 
 Recently I passed the OSAI and wanted to share my experience with the course, exam, and building my own AI pentesting harness. [OffSec AI Red Teamer](https://www.offsec.com/courses/ai-300/) is OffSec's certification focused on exploiting AI-enabled enterprise environments. 
@@ -22,7 +32,7 @@ As with all OffSec courses, the material is very thorough with a deep understand
 
 Initially there were minor issues with the capstone and challenge labs, but in the weeks leading up to my exam I had no issues. It's expected there are a few hiccups for a new course and the stability improved noticeably.
 
-If you have experience taking other OffSec courses then you know what to expect in regards to challenge labs and the exam. They provided a good learning environment with challenging objectives. You will learn a lot of how the systems interacting with each other create new opportunities for exploitation. The last challenge lab is the perfect place to train and iterate on your agent(s), and serves as a simulated exam.
+If you have experience taking other OffSec courses then you know what to expect in regards to challenge labs and the exam. They provided a good learning environment with challenging objectives. You will learn how interactions between systems create new exploitation opportunities. The last challenge lab is the perfect place to train and iterate on your agent(s), and serves as a simulated exam.
 
 ## Exam
 
@@ -44,9 +54,9 @@ Going by the discord and some offensive security researchers on X, here are the 
 - Kimi k3 or k3.1
 - Grok 4.6/4.7
 
-I left claude out because too many refusals makes it very difficult to get any value from it, and the approvals being very selective. [blackboxarena](https://blackboxarena.ai/) provides some rankings in regards to offensive security benchmarks for models to get you started.
+I left Claude out because too many refusals make it very difficult to get any value from it, and the approvals are very selective. [blackboxarena](https://blackboxarena.ai/) provides some rankings in regards to offensive security benchmarks for models to get you started.
 
-For the purpose of the exam, token usage and cost - in my opinion - is not really a useful metric. Ultimately you want two things from your model, power and speed. Providers have DeepSeek with high tokens per second throughput making it a good choice in a balance of speed and reasoning. Standard 5.6 Sol runs at approx 80-100 tok/s, versus DeepSeek at 150-200.
+For the exam, I prioritized capability and speed over token cost. Providers have DeepSeek with high tokens per second throughput making it a good choice in a balance of speed and reasoning. Standard 5.6 Sol runs at approx 80-100 tok/s, versus DeepSeek at 150-200. However, token throughput alone doesn't tell you how quickly an agent will complete an objective. A faster model can still take longer if it needs more attempts or spends time pursuing the wrong approach.
 
 ### Harness
 
@@ -61,7 +71,7 @@ There are several popular options when it comes to harnesses:
 
 ...and many more.
 
-These harnesses vary in added capabilities giving your agent more access to things such as; subagents, web search, documentation, summarization etc. [Harness Leaderboard](https://huggingface.co/spaces/joelniklaus/harness-leaderboard) details how the harnesses rank against each other in performance and cost per task solved. Ultimately there isn't a huge difference between them in performance so just pick one you like. My only additional comment here would be it can be tricky to get daybreak blue to work on anything other than Codex.
+These harnesses vary in added capabilities giving your agent more access to things such as subagents, web search, documentation, summarization etc. [Harness Leaderboard](https://huggingface.co/spaces/joelniklaus/harness-leaderboard) details how the harnesses rank against each other in performance and cost per task solved. Ultimately there isn't a huge difference between them in performance so just pick one you like. My only additional comment here would be it can be tricky to get daybreak blue to work on anything other than Codex.
 
 ## Building the Agent
 
@@ -71,7 +81,7 @@ Here is a sample of some of the structure for my agent:
 
 ```text
 osai-agent/
-|--- artfacts/
+|--- artifacts/
      |--enum/
      |--loot/
      |--payloads
@@ -91,7 +101,7 @@ osai-agent/
      |--operations/
      |--...
 |--- tools/
-     |--apppend_audit.py
+     |--append_audit.py
      |--checklist.py
      |--checkpoint.py
      |--init_engagement.py
@@ -130,7 +140,7 @@ If this skill was invoked, you MUST read the ENTIRE SKILL.md before you perform 
 
 ### The Core Loop
 
-There are several approaches you can take with the agent, here are the main ones that I tested with using. Naturally there are many more options that you could go with, these are mainly **autonomous** designs, but another option is using the agent as your assistant and not running any commands itself.
+There are several approaches you can take with the agent, here are the main ones that I tested. Naturally there are many more options that you could go with, these are mainly **autonomous** designs, but another option is using the agent as your assistant and not running any commands itself.
 
 | #   | Model             | How it works                                                                          | Main advantage                                     | Main risk                                                                                         |
 | --- | ----------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
@@ -151,13 +161,13 @@ There are several approaches you can take with the agent, here are the main ones
 
 ![A lead agent handles dependent actions directly and delegates independent tasks to workers before producing a result.]({{ '/assets/images/osai-review/hybrid-lead-agent.png' | relative_url }})
 
-Start small and iterate, AI is your best friend here, don't be shy for using the AI to help build itself. Bounce ideas off it, build reusable tools, and test your harness on the labs.
+Start small and iterate, AI is your best friend here, don't hesitate to use the AI to help build itself. Bounce ideas off it, build reusable tools, and test your harness on the labs.
 
 ### Feedback Loop
 
 The time with the challenge labs is extremely valuable for testing and iterating on what you have built during the course. Here is where you get to test what you've built on a real challenge environment based on the course material, and if it can adapt to new scenarios. Keep an audit of everything you do in these labs, what worked, what didn't work, what paths were missed etc. 
 
-The harness you are using will keep a session log / history of the entire conversation. This also provides a valuable resources, feed it into your agent and ask it for improvements.
+The harness you are using will keep a session log / history of the entire conversation. This also provides a valuable resource; feed it into your agent and ask it for improvements.
 
 Here are some additional resources for experimenting:
 
@@ -177,7 +187,7 @@ Overall I learned a lot from the material and challenge labs for exploiting AI/M
 
 - [Harnessing Harnesses](https://blog.zsec.uk/harnessing-harnesses/)
 - [Introduction to Harness Engineering for Vulnerability Research](https://grahamhelton.github.io/harness-engineering-workshop-book/introduction.html)
-- [Post on X](https://x.com/bytemohit/status/2063493300884246598)
+- [Harness engineering — @bytemohit on X](https://x.com/bytemohit/status/2063493300884246598)
 
 ### Books
 
