@@ -6,7 +6,7 @@ date: 2026-11-17 00:00:00 +0000
 
 ## Course
 
-Passed the OSAI exam last week and wanted to share my experience with the course, exam, and building my own AI pentesting harness. [OffSec AI Red Teamer](https://www.offsec.com/courses/ai-300/) is OffSec's certification focused on exploiting AI-enabled enterprise environments. 
+Recently I passed the OSAI and wanted to share my experience with the course, exam, and building my own AI pentesting harness. [OffSec AI Red Teamer](https://www.offsec.com/courses/ai-300/) is OffSec's certification focused on exploiting AI-enabled enterprise environments. 
 
 AI-300 covers a range of topics such as:
 
@@ -23,6 +23,12 @@ As with all OffSec courses, the material is very thorough with a deep understand
 Initially there were minor issues with the capstone and challenge labs, but in the weeks leading up to my exam I had no issues. It's expected there are a few hiccups for a new course and the stability improved noticeably.
 
 If you have experience taking other OffSec courses then you know what to expect in regards to challenge labs and the exam. They provided a good learning environment with challenging objectives. You will learn a lot of how the systems interacting with each other create new opportunities for exploitation. The last challenge lab is the perfect place to train and iterate on your agent(s), and serves as a simulated exam.
+
+## Exam
+
+I went into the exam with my starting prompts prepared and the agent thoroughly tested on the challenge labs. It took about 5 hours to get 70 points, and about 8 to reach 85. After that I started working on my report while leaving my agents running in the background for the last 15 points. 
+
+I had my agents operate through a shared tmux session, giving me the ability to connect to the session, take screenshots and run commands myself to collect the evidence for my report. All the evidence collection could be done autonomously though, using a screenshot tool like `gowitness` and an agent skill.
 
 ## Agent Setup
 
