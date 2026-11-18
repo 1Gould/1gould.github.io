@@ -238,7 +238,14 @@ h1 { margin: 0; font-size: clamp(1.875rem, 5vw, 2.5rem); font-weight: 600; lette
 .back-link { font: 12px/1.7 var(--mono); text-decoration: none; }
 .post-heading { margin: 2.75rem 0 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--line); }
 .post-description { color: var(--muted); margin: 1.25rem 0 0; font-size: 1.05rem; }
-.post-content h2 { margin: 2.5rem 0 1rem; font-size: 1.4rem; font-weight: 600; letter-spacing: -.02em; }
+.post-content .section-nav { font-size: .9375rem; font-weight: 600; }
+.post-content .section-nav a { color: var(--accent); }
+.post-content h2 { margin: 2.5rem 0 1rem; font-size: 1.625rem; font-weight: 600; letter-spacing: -.02em; }
+.post-content h3 { font-size: 1.1875rem; }
+.post-content h4 { font-size: 1rem; line-height: 1.4; font-weight: 600; }
+.post-content h2::before { content: "# " / ""; color: var(--accent); }
+.post-content h3::before { content: "## " / ""; color: var(--accent); }
+.post-content h4::before { content: "### " / ""; color: var(--accent); }
 .post-navigation { display: flex; justify-content: space-between; gap: 2rem; margin-top: 3rem; }
 .post-navigation:empty { display: none; }
 .post-navigation a { max-width: 48%; text-decoration: none; font-size: .9rem; }
