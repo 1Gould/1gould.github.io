@@ -81,35 +81,35 @@ Here is a sample of some of the structure for my agent:
 
 ```text
 osai-agent/
-|--- artifacts/
-     |--enum/
-     |--loot/
-     |--payloads
-     |--tool_calls/
-     |--...
-|--- docs/
-|--- engagement/
-     |--engagement.md
-     |--operations.md
-     |--router.md
-     |--state.json
-     |--...
-|--- payloads/
-|--- references/
-     |--cheatsheets/
-     |--checklists/
-     |--operations/
-     |--...
-|--- tools/
-     |--append_audit.py
-     |--checklist.py
-     |--checkpoint.py
-     |--init_engagement.py
-     |--read_audit.py
-     |--refresh.py
-     |--run_audit.py
-     |--update_state.py
-     |-...
+├── artifacts/
+│   ├── enum/
+│   ├── loot/
+│   ├── payloads/
+│   ├── tool_calls/
+│   └── ...
+├── docs/
+├── engagement/
+│   ├── engagement.md
+│   ├── operations.md
+│   ├── router.md
+│   ├── state.json
+│   └── ...
+├── payloads/
+├── references/
+│   ├── cheatsheets/
+│   ├── checklists/
+│   ├── operations/
+│   └── ...
+└── tools/
+    ├── append_audit.py
+    ├── checklist.py
+    ├── checkpoint.py
+    ├── init_engagement.py
+    ├── read_audit.py
+    ├── refresh.py
+    ├── run_audit.py
+    ├── update_state.py
+    └── ...
 ```
 
 I recommend creating skills for each category of attack and taking some inspiration from these open source repos:
